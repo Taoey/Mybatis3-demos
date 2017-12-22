@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapping.studentMapper">
+	<!--查找一个学生  -->
+    <select id="getStudent" parameterType="String" resultType="Student">
+        select * from s where _s=#{id}
+    </select>
+    <!--获取所有学生 -->
+    <select id="getAllStudents" resultType="mavenBean.Student">
+    	select * from s    
+    </select>
+    
+</mapper>

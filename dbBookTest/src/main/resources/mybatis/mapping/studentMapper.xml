@@ -3,11 +3,11 @@
 
 <mapper namespace="mybatis.mapping.studentMapper">
 	<!--查找一个学生  -->
-    <select id="getStudent" parameterType="String" resultType="cn.hwtblog.bean.Student">
+    <select id="getStudent" parameterType="String" resultType="_Student">
         select * from s where _s=#{id}
     </select>
     <!--获取所有学生 -->
-    <select id="getAllStudents" resultType="cn.hwtblog.bean.Student">
+    <select id="getAllStudents" resultType="_Student">
     	select * from s    
     </select>
     

@@ -3,7 +3,7 @@
 <configuration>
 	<properties resource="configs/db.properties"/>
 	<typeAliases>
-		<typeAlias type="cn.hwtblog.bean.Student" alias="_Student"/>
+		<package name="cn.hwtblog.bean"/>
 	</typeAliases>
     <environments default="development">
         <environment id="development">

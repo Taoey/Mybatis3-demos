@@ -3,7 +3,7 @@
 .metadata/**
 RemoteSystemsTempFiles/**
 .recommenders/**
-
+**/.settings/
 
 # Compiled class file
 *.class

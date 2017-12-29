@@ -8,6 +8,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Test;
 
 import cn.hwtblog.bean.Student;
+import cn.hwtblog.utils.MyBatisUtil;
 
 public class Test01 {
 
@@ -24,5 +25,14 @@ public class Test01 {
         //执行查询返回一个唯一user对象的sql
         Student s=session.selectOne(statement,"s1");
         System.out.println(s);
+	}
+	
+	@Test
+	public void test02() {
+		SqlSession sqlSession= MyBatisUtil.getSqlSession();
+		String statement = "mybatis.mapping.studentMapper.getStudent";
+		Student s=sqlSession.selectOne(statement,"s1");
+		System.out.println(s);
+		
 	}
 }

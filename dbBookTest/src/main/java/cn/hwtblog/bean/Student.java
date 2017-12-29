@@ -3,7 +3,7 @@ package cn.hwtblog.bean;
 public class Student {
 
 	private String _s;
-	private String sname;
+	private String sName;
 	private int age;
 	private int sex;
 	
@@ -11,10 +11,10 @@ public class Student {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Student(String _s, String sname, int age, int sex) {
+	public Student(String _s, String sName, int age, int sex) {
 		super();
 		this._s = _s;
-		this.sname = sname;
+		this.sName = sName;
 		this.age = age;
 		this.sex = sex;
 	}
@@ -24,11 +24,11 @@ public class Student {
 	public void set_s(String _s) {
 		this._s = _s;
 	}
-	public String getSname() {
-		return sname;
+	public String getsName() {
+		return sName;
 	}
-	public void setSname(String sname) {
-		this.sname = sname;
+	public void setsName(String sName) {
+		this.sName = sName;
 	}
 	public int getAge() {
 		return age;
@@ -44,7 +44,7 @@ public class Student {
 	}
 	@Override
 	public String toString() {
-		return "Student [_s=" + _s + ", sname=" + sname + ", age=" + age + ", sex=" + sex + "]";
+		return "Student [_s=" + _s + ", sName=" + sName + ", age=" + age + ", sex=" + sex + "]";
 	}
 	
 	

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mybatis.mapping.mutilMapper">
+	<!-- 选修#{_c}课程的学生信息 -->
+	<select id="getS" resultType="Student">
+		SELECT * FROM s WHERE _s IN (
+			SELECT _s FROM sc WHERE _c=#{_c}
+		)
+	</select>
+
+
+
+</mapper>

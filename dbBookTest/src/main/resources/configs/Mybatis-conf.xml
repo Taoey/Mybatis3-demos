@@ -19,5 +19,7 @@
     </environments>
      <mappers>
         <mapper resource="mybatis/mapping/studentMapper.xml"/>
+        <mapper resource="mybatis/mapping/scMapper.xml"/>
+        <mapper resource="mybatis/mapping/mutilMapper.xml"/>
     </mappers>   
 </configuration>

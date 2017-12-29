@@ -23,12 +23,29 @@ public class MultiTest {
 	/**
 	 * 选修c1课程的学生信息
 	 */
-	public void test01() {
+	public void test00() {
 		SqlSession sqlSession = MyBatisUtil.getSqlSession();
 		String statement = "mybatis.mapping.mutilMapper.getS";
 		List<SC> scList = sqlSession.selectList(statement,"c1");
 		sqlSession.close();
 		System.out.println(scList);
 	}
+	@Test
+	public void test01() {
+		SqlSession sqlSession = MyBatisUtil.getSqlSession();
+		String statement = "mybatis.mapping.mutilMapper.getS2";
+		List<SC> scList = sqlSession.selectList(statement,"c1");
+		sqlSession.close();
+		System.out.println(scList);
+	}
+	@Test
+	public void test02() {
+		SqlSession sqlSession = MyBatisUtil.getSqlSession();
+		String statement = "mybatis.mapping.mutilMapper.getS2";
+		List<SC> scList = sqlSession.selectList(statement,"c1");
+		sqlSession.close();
+		System.out.println(scList);
+	}
+	
 
 }

@@ -8,7 +8,25 @@
 			SELECT _s FROM sc WHERE _c=#{_c}
 		)
 	</select>
-
-
+	
+	<!-- 一个select中resultType和resultMap不能同时存在，一般简单的查询使用resultType即可 -->
+	<select id="getS1" resultType="Student">
+		SELECT s.* FROM
+		s  LEFT JOIN sc ON s.`_s`=sc.`_s`
+		WHERE sc.`_c`=#{_c}
+	</select>
+	
+	
+	<select id="getS2" resultMap="getS2map">
+		SELECT s.* FROM
+		s  LEFT JOIN sc ON s.`_s`=sc.`_s`
+		WHERE sc.`_c`=#{_c}
+	</select>
+	
+	<resultMap id="getS2map" type="Student">    
+	    <id column="_s" property="_s"/>    
+	    <result column="sName" property="sName"/> <!-- column表示的是数据库中的列名，property表示的是类中的名称 -->  
+	    <result column="age" property="age"/>    
+	</resultMap>   
 
 </mapper>

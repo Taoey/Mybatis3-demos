@@ -27,14 +27,7 @@ public class SCTest {
 		System.out.println(scList);
 	}
 	
-	@Test
-	public void gets() {
-		SqlSession sqlSession = MyBatisUtil.getSqlSession();
-		String statement = "mybatis.mapping.scMapper.getS";
-		List<SC> scList = sqlSession.selectList(statement,"c1");
-		sqlSession.close();
-		System.out.println(scList);
-	}
+
 	
 	
 	

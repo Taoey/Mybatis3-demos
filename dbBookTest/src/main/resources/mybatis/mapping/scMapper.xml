@@ -3,7 +3,7 @@
 
 <mapper namespace="mybatis.mapping.scMapper">
 	<select id="getAll" resultType="SC">
-		select * from sc		 
+		select * from sc 
 	</select>
 
 </mapper>

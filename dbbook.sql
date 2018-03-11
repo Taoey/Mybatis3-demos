@@ -16,6 +16,13 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Current Database: `dbbook`
+--
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `dbbook` /*!40100 DEFAULT CHARACTER SET utf8 */;
+
+USE `dbbook`;
+--
 -- Table structure for table `c`
 --
 
